@@ -1,0 +1,146 @@
+.App {
+  margin: 50px auto;
+  width: 100%;
+  height: 100%;
+}
+
+.productForm{
+  height: auto;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.productForm input {
+  margin: 10px 20px;
+  padding: 5px;
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.productForm input:active, .productForm input:focus-visible, .productForm input:focus, .productForm input:hover  {
+  outline: none;
+  border: none ;
+  box-shadow: 0px 3px 0px -1px rgba(81,16,58,1);
+  transition: ease-out 1s;
+  letter-spacing: .5px;
+
+}
+
+.productForm button {
+  padding: 3px;
+  background-color: rgb(81, 16, 58);
+  color: white;
+  border: 1px solid white;
+  width: 70px;
+}
+.productForm button:hover {
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+  transition: ease-out .5s;
+}
+
+.outputComponent{
+  display: flex;
+flex-wrap: wrap;
+height: auto;
+width: 100%;
+padding: 20px;
+justify-content: center;
+align-items: center;
+}
+
+.productCard {
+  margin: 20px ;
+  padding: 10px;
+  height: 280px;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-left: 2px solid rgb(81, 16, 58);
+  border-bottom: 2px solid rgb(81, 16, 58);
+  border-right: 1px solid rgba(128, 128, 128, 0.155);
+  border-top: 1px solid rgba(128, 128, 128, 0.298);
+}
+
+.productCard img {
+  height: 130px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.productCard h3 {
+  text-transform: uppercase;
+  padding: 5px 0;
+  letter-spacing: 1px;
+}
+
+.productCard h5 {
+  padding: 5px 0;
+  letter-spacing: 0.5px;
+  text-align: right;
+  font-weight: 800;
+  color: rgb(81, 16, 58);
+}
+.productCard button {
+width: 45%;
+margin:2.5%;
+padding: 5px;
+}
+.addToCartBtn {
+  padding: 5px;
+  background-color: rgb(81, 16, 58);
+  color: white;
+  border: 1px solid white;
+}
+.addToCartBtn:hover {
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+  transition: ease-out .5s;
+}
+
+.deleteBtn {
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    transition: ease-out .5s;
+}
+
+.deleteBtn:hover {
+  background-color: #51103a;
+  color: white;
+  border: 1px solid white;
+  transition: ease-out .5s;
+}
+
+.cart {
+  position: absolute;
+  width: 80%;
+  height: 400px;
+  background-color: white;
+  border: 2px solid #51103a;
+  top: 15%;
+  left: 10%;
+}
+
+.showCart {
+  background-color: transparent;
+  color: #51103a;
+  border: none;
+  margin: 0 0 0 50px;
+}
+
+.showCart:hover {
+  scale: 1.1 ;
+  transition: ease-out .5s;
+}
+
+.cartImg {
+  height: 50px;
+  width: 70px;
+  object-fit: cover;
+}
